@@ -122,7 +122,7 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-
+    ofBackground(bg);
 }
 
 //--------------------------------------------------------------
@@ -135,6 +135,7 @@ void ofApp::keyPressed(int key){
         mode = 2;
         playPos = 0;
         cout << "play" << endl;
+        bg = 50;
         
     }
     if(key=='r'){
@@ -143,6 +144,7 @@ void ofApp::keyPressed(int key){
         mode = 1;
         recPos = 0;
         cout << "rec" << endl;
+        bg = 255;
         
     }
 
