@@ -70,7 +70,7 @@ void ofApp::audioReceived(float * input, int bufferSize, int nChannels){
 void ofApp::audioRequested(float * output, int bufferSize, int nChannels){
     
 //    int st = playPos;
-    float spd =1.5;
+    float spd =2.0;
     float target = (float)bufferSize*spd;
     float now = 0.0;
     int index = 0;
@@ -170,8 +170,8 @@ void ofApp::mouseDragged(int x, int y, int button){
 void ofApp::mousePressed(int x, int y, int button){
 
     //画面をタッチすると、録音モードへ
-    mode = 1;
-    recPos = 0;
+//    mode = 1;
+//    recPos = 0;
     
 }
 
@@ -179,8 +179,8 @@ void ofApp::mousePressed(int x, int y, int button){
 void ofApp::mouseReleased(int x, int y, int button){
 
     //画面をから指を離すと、再生モードへ
-    mode = 2;
-    playPos = 0;
+//    mode = 2;
+//    playPos = 0;
     
 }
 
