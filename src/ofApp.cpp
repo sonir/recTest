@@ -5,7 +5,7 @@ void ofApp::setup(){
 
     //サンプリングレイトの設定
     sampleRate = 44100;
-    bg = 0;
+    bgcolor = 0;
     
     //サウンド録音再生の初期化
     ofSoundStreamSetup(1, 1, this, sampleRate, LENGTH, CHANNEL);
@@ -123,7 +123,7 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    ofBackground(bg);
+    ofBackground(bgcolor);
 }
 
 //--------------------------------------------------------------
@@ -136,7 +136,7 @@ void ofApp::keyPressed(int key){
         mode = 2;
         playPos = 0;
         cout << "play" << endl;
-        bg = 50;
+        bgcolor = 50;
         
     }
     if(key=='r'){
@@ -145,7 +145,7 @@ void ofApp::keyPressed(int key){
         mode = 1;
         recPos = 0;
         cout << "rec" << endl;
-        bg = 255;
+        bgcolor = 255;
         
     }
 
