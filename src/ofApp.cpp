@@ -134,7 +134,7 @@ void ofApp::keyPressed(int key){
         //画面をから指を離すと、再生モードへ
         mode = 2;
         playPos = 0;
-        
+        cout << "play" << endl;
         
     }
     if(key=='r'){
@@ -142,6 +142,7 @@ void ofApp::keyPressed(int key){
         //画面をタッチすると、録音モードへ
         mode = 1;
         recPos = 0;
+        cout << "rec" << endl;
         
     }
 
