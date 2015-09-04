@@ -36,6 +36,6 @@ class ofApp : public ofBaseApp{
         int playPos; //再生位置
         int mode; //現在のモード、0:off, 1:recording, 2:play
     
-    int bg = 0;
+        int bg;
     
 };

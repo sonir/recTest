@@ -5,6 +5,7 @@ void ofApp::setup(){
 
     //サンプリングレイトの設定
     sampleRate = 44100;
+    bg = 0;
     
     //サウンド録音再生の初期化
     ofSoundStreamSetup(1, 1, this, sampleRate, LENGTH, CHANNEL);
